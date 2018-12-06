@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container>
+  <testcase id="100854" type="Source Code" status="Accepted" submissionDate="2013-05-21" language="C++" author="NSA/Center for Assured Software" numberOfFiles="5" testsuiteid="86 108">
+    <description><![CDATA[CWE: 401 Memory Leak<br/> BadSource: realloc Allocate data using realloc()<br/> GoodSource: Allocate data on the stack<br/> Sinks:<br/> GoodSink: call free() on data<br/> BadSink : no deallocation of data<br/> Flow Variant: 74 Data flow: data passed in a map from one function to another in different source files]]></description>
+    <file path="shared/108/io.c" language="C" size="5429" checksum="bcf531cb1922c03347031698c1c72eddadbf0d88"/>
+    <file path="000/100/854/CWE401_Memory_Leak__wchar_t_realloc_74b.cpp" language="C++" size="1463" checksum="244ec1386498e4996106f5c40347f7ed8f6fb183">
+      <mixed line="34" name="CWE-401: Improper Release of Memory Before Removing Last Reference ('Memory Leak')"/>
+    </file>
+    <file path="shared/108/std_testcase_io.h" language="C" size="1457" checksum="56de16829d5ac9d8086670ee5098217aa6694d26"/>
+    <file path="shared/108/std_testcase.h" language="C" size="4004" checksum="d1801c64bc49d5d05fb3d55f7cc7e3a925c47e2f"/>
+    <file path="000/100/854/CWE401_Memory_Leak__wchar_t_realloc_74a.cpp" language="C++" size="3227" checksum="38b5e862b87822ac1861e432e77e5babbdf234c7"/>
+  </testcase>
+</container>
